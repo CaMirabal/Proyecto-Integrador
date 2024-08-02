@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <title>Menú Snacks</title>
 </head>
 <body>
@@ -15,23 +16,20 @@
   
     <!--primera receta--> 
 
-   <div>
-        <div class="contenedor">
-             
-            <img src="imágenes snacks/garbanzos especiados.jpg" alt="Garbanzos especiados">
-             
-            <div class="receta">
+   <div class=container> <!--primer contenedor con tres recetas-->
+            
+            <div class="carta">
+                 <img src="imágenes snacks/garbanzos especiados.jpg" alt="Garbanzos especiados">
                 <H2>Garbanzos especiados</H2>
-                <p>Disfruta de unos deliciosos y saludables snacks de garbanzos especiados.
-                 Rápidos y fáciles de preparar, estos crujientes garbanzos están llenos de sabor y nutrientes, perfectos para un tentempié nutritivo a cualquier hora del día.</p>
+                <p>Rápidos y fáciles de preparar, estos crujientes garbanzos están llenos de sabor y nutrientes, 
+                 perfectos para un tentempié nutritivo a cualquier hora del día.</p>
+             <a href="#ex1" rel="modal:open"><button>¡Preparar!</button></a> <!--botón de abrir la ventana-->
             </div>
 
-       </div>
-
-
-        <div class="ocultar">
-            <div class="Datos">
-               <img src="imágenes snacks/ingredientes.png" alt="bandeja">
+<!--inicio modal-->
+        <div id="ex1" class="modal receta">
+           <H2>Garbanzos especiados</H2>
+            <div>
                <h3>Ingredientes</h3>
                <h5>para 4 personas</h5>
            </div> 
@@ -47,13 +45,8 @@
                 <li>Pimienta negra molida 1/2 cucharadita</li>
                 <li>Pimentón dulce 1 y 1/2 cucharadita</li> 
             </ul>
-
-             <div class="Datos">
-
-                <img src="imágenes snacks/procedimiento.png" alt="sartén">
+            
                 <h3>Procedimiento</h3>
-
-             </div>   
             <p>
                 <b>1.</b> Empezamos precalentando el horno a 200ºC y forrando una bandeja de horno con papel parafinado.<br>
                 <b>2.</b> En un bol mezclamos todas las especias con la sal y el zumo de limón, batiendo un poco con un tenedor hasta que se integren.<br>
@@ -63,32 +56,21 @@
             </p>
 
         </div>
-        
-        <button>
-            <b>¡Preparar!</b>
-        </button>
-
-   </div>
 
 <!--Segunda receta-->
-
-   <div>
-    <div class="contenedor">
          
-        <img src="imágenes snacks/bonbones de datil con almendras.jpg" alt="Bonbones de dátil y almendras">
-         
-        <div class="receta">
+        <div class="carta">
+             <img src="imágenes snacks/bonbones de datil con almendras.jpg" alt="Bonbones de dátil y almendras">
             <H2>Bombones de dátil y almendras</H2>
-            <p>Disfruta de unos deliciosos y saludables bombones de dátil y almendras. Estos snacks rápidos y fáciles de preparar combinan 
-                la dulzura natural de los dátiles con el crujiente de las almendras, ofreciendo un tentempié nutritivo y energético perfecto para cualquier momento del día.</p>
+            <p>Estos snacks rápidos y fáciles de preparar combinan la dulzura natural de los dátiles con el crujiente de las almendras, 
+                ofreciendo un tentempié nutritivo y energético perfecto para cualquier momento del día.</p>
+        <a href="#ex2" rel="modal:open"><button>¡Preparar!</button></a> <!--botón de abrir la ventana-->
         </div>
-
-   </div>
-
-
-    <div class="ocultar">
-        <div class="Datos">
-           <img src="imágenes snacks/ingredientes.png" alt="bandeja">
+       
+<!--inicio modal-->
+    <div id="ex2" class="modal receta">
+       <H2>Bombones de dátil y almendras</H2>
+        <div>
            <h3>Ingredientes</h3>
        </div> 
        
@@ -98,13 +80,9 @@
             <li>Canela</li>
             <li>Coco rayado o cocoa</li>
         </ul>
-
-         <div class="Datos">
-
-            <img src="imágenes snacks/procedimiento.png" alt="sartén">
+          
             <h3>Procedimiento</h3>
 
-         </div>   
         <p>
             <b>1.</b> Quita el carozo a los dátiles y trocéalos.<br>
             <b>2.</b>Después colócalos en una picadora junto a las almendras y tritura ambos ingredientes<br>
@@ -116,31 +94,21 @@
 
     </div>
     
-    <button>
-        <b>¡Preparar!</b>
-    </button>
-
-</div>
 
 <!--Tercera receta-->
-
-<div>
-    <div class="contenedor">
          
-        <img src="imágenes snacks/CupsAlmendrasChocolate.jpg" alt="Cups de almendras y chocolate">
-         
-        <div class="receta">
+        <div class="carta">
+               <img src="imágenes snacks/CupsAlmendrasChocolate.jpg" alt="Cups de almendras y chocolate">
             <H2>Cups Keto de avellanas y chocolate</H2>
-            <p>Disfruta de unos deliciosos y saludables cups keto de avellanas y chocolate. Estos snacks fáciles y rápidos de preparar combinan el rico sabor del chocolate con la cremosidad de las avellanas,
+            <p>Estos snacks fáciles y rápidos de preparar combinan el rico sabor del chocolate con la cremosidad de las avellanas,
              ofreciendo un tentempié bajo en carbohidratos y perfecto para cualquier momento del día.</p>
+       <a href="#ex3" rel="modal:open"><button>¡Preparar!</button></a> <!--botón de abrir la ventana-->
         </div>
-
-   </div>
-
-
-    <div class="ocultar">
-        <div class="Datos">
-           <img src="imágenes snacks/ingredientes.png" alt="bandeja">
+       
+<!--inicio modal-->
+    <div id="ex3" class="modal receta">
+       <H2>Cups Keto de avellanas y chocolate</H2>
+        <div>
            <h3>Ingredientes</h3>
        </div> 
        
@@ -154,12 +122,8 @@
             <li>Una pizca de sal</li>
         </ul>
 
-         <div class="Datos">
-
-            <img src="imágenes snacks/procedimiento.png" alt="sartén">
             <h3>Procedimiento</h3>
 
-         </div>   
         <p>
             <b>1.</b> Pica las avellanas.<br>
             <b>2.</b> En una olla, mezcla la crema de avellanas y el aceite de coco, lleva a fuego y derrite en fuego más bajo posible.<br>
@@ -169,33 +133,28 @@
         </p>
 
     </div>
+ 
+</div>  <!-- final primer contenedor con tres recetas-->
+
+    <br> 
     
-    <button>
-        <b>¡Preparar!</b>
-    </button>
-
-</div>
-
 <!--Cuarta receta-->
 
-<div>
-    <div class="contenedor">
-         
-        <img src="imágenes snacks/chips de zanahoria.jpg" alt="Chips de zanahoria">
-         
-        <div class="receta">
+<div class=container>   <!-- segundo contenedor con tres recetas-->
+        
+        <div class="carta">
+              <img src="imágenes snacks/chips de zanahoria.jpg" alt="Chips de zanahoria">
             <H2>Chips de zanahoria, betabel, calabacín o tubérculos</H2>
-            <p>Disfruta de unos deliciosos y saludables chips de zanahoria, betabel, calabacín o tubérculos. 
-            Estos snacks crujientes y coloridos son fáciles y rápidos de preparar, proporcionando un tentempié
-            nutritivo y lleno de sabor perfecto para cualquier momento del día.</p>
+            <p>Estos snacks crujientes y coloridos son fáciles y rápidos de preparar, proporcionando un tentempié
+            nutritivo y lleno de sabor perfecto para cualquier momento del día. </p>
+             <a href="#ex4" rel="modal:open"><button>¡Preparar!</button></a> <!--botón de abrir la ventana-->
         </div>
 
-   </div>
 
 
-    <div class="ocultar">
-        <div class="Datos">
-           <img src="imágenes snacks/ingredientes.png" alt="bandeja">
+    <div id="ex4" class="modal receta">
+       <H2>Chips de zanahoria, betabel, calabacín o tubérculos</H2>
+        <div>
            <h3>Ingredientes</h3>
        </div> 
        
@@ -204,45 +163,33 @@
             <li>Aceite de cococ</li>
             <li>Sal Marina</li>
         </ul>
-
-         <div class="Datos">
-
-            <img src="imágenes snacks/procedimiento.png" alt="sartén">
+        
             <h3>Procedimiento</h3>
 
-         </div>   
         <p>
             <b>1.</b> Corta las zanahorias en rodajas finas (como si fuera con una rebanadora).<br>
             <b>2.</b> Fríe en el aceite de coco caliente (o prepara en airfryer), escurre y sazona con sal al gusto.<br>
     </div>
     
-    <button>
-        <b>¡Preparar!</b>
-    </button>
 
-</div>
 
 <!--Quinta receta-->
 
-<div>
-    <div class="contenedor">
+    <div class="carta">
          
-        <img src="imágenes snacks/mousee de chocolate y aguacate.jpg" alt="Mousse de chocolate y aguacate">
-         
-        <div class="receta">
+             <img src="imágenes snacks/mousee de chocolate y aguacate.jpg" alt="Mousse de chocolate y aguacate">
             <H2>Mousse de aguacate y chocolate</H2>
-            <p>Disfruta de un delicioso mousse de aguacate y chocolate, sin azúcar añadida. 
-                Este postre cremoso y fácil de preparar combina la riqueza del chocolate con los nutrientes
+            <p> Este postre cremoso y fácil de preparar combina la riqueza del chocolate con los nutrientes
                 del aguacate, ofreciendo grasas saludables, fibra y vitaminas en cada bocado."
             </p>
-        </div>
+            <a href="#ex5" rel="modal:open"><button>¡Preparar!</button></a> <!--botón de abrir la ventana-->
+    </div>
 
-   </div>
 
-
-    <div class="ocultar">
-        <div class="Datos">
-           <img src="imágenes snacks/ingredientes.png" alt="bandeja">
+    <div id="ex5" class="modal receta">
+      
+        <H2>Mousse de aguacate y chocolate</H2>
+        <div>
            <h3>Ingredientes</h3>
        </div> 
        
@@ -253,13 +200,9 @@
             <li>50 ml de leche de origen vegetal (avellana, almendra; según tus sensibilidades)</li>
             <li>Edulcorante al gusto (estevia, monkfruit o xilitol)</li>
         </ul>
-
-         <div class="Datos">
-
-            <img src="imágenes snacks/procedimiento.png" alt="sartén">
+        
             <h3>Procedimiento</h3>
-
-         </div>   
+  
         <p>
             <b>1.</b> Con un tenedor o con la batidora, tritura los aguacates hasta que se forme una masa cremosa.<br>
             <b>2.</b> Añade la leche y el cacao en polvo y sigue mezclando.<br>
@@ -269,33 +212,24 @@
 
     </div>
     
-    <button>
-        <b>¡Preparar!</b>
-    </button>
-
-</div>
-
 <!--Sexta receta-->
-
-<div>
-    <div class="contenedor">
          
-        <img src="imágenes snacks/barras de sesamo y ajonjoli.webp" alt="Barras de Ajonjolí o Sésamo">
-         
-        <div class="receta">
+        <div class="carta">
+            <img src="imágenes snacks/barras de sesamo y ajonjoli.webp" alt="Barras de Ajonjolí o Sésamo">
             <H2>Barras de Ajonjolí o Sésamo</H2>
-            <p>Disfruta de unas deliciosas y saludables barras de ajonjolí o sésamo. Estas barras
-            crujientes y fáciles de preparar son ricas en nutrientes esenciales como fibra, proteínas y grasas saludables, ofreciendo un tentempié nutritivo perfecto para cualquier momento del día.</p>
+            <p>Estas barras crujientes y fáciles de preparar son ricas en nutrientes esenciales como fibra, proteínas y grasas saludables,
+                 ofreciendo un tentempié nutritivo perfecto para cualquier momento del día.</p>
+            <a href="#ex6" rel="modal:open"><button>¡Preparar!</button></a> <!--botón de abrir la ventana-->
         </div>
 
-   </div>
+   <!--inicio modal-->
 
-
-    <div class="ocultar">
-        <div class="Datos">
-           <img src="imágenes snacks/ingredientes.png" alt="bandeja">
-           <h3>Ingredientes</h3>
-       </div> 
+    <div  id="ex6" class="modal receta"> <!--id modal-->
+          
+        <H2>Barras de Ajonjolí o Sésamo</H2>
+          <div> 
+              <h3>Ingredientes</h3>
+          </div> 
        
         <ul>
             <li>1 taza de ajonjolí/sésamo blanco</li>
@@ -305,12 +239,8 @@
             <li>50 grs de pasas</li>
         </ul>
 
-         <div class="Datos">
-
-            <img src="imágenes snacks/procedimiento.png" alt="sartén">
             <h3>Procedimiento</h3>
 
-         </div>   
         <p>
             <b>1.</b> Tuesta el ajonjolí/sésamo en el horno a 200 ºC, removiendo de vez en cuando, por 20 minutos aproximadamente o hasta que esté ligeramente doradito, al término de ese tiempo retira y reserva..<br>
             <b>2.</b> Mientras prepara a fuego moderado la miel, canela y sal, hasta que burbujee, entonces agrega el ajonjolí y las pasas y mezcla hasta que quede homogénea.<br>
@@ -321,10 +251,13 @@
 
     </div>
     
-    <button>
-        <b>¡Preparar!</b>
-    </button>
+</div> <!--final segundo contenedor con 3 recetas-->
 
-</div>
+<!--llamado para ventana emergente de la libreria-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<!--llamado para ventana emergente de la libreria-->
+
+    
 </body>
 </html>
