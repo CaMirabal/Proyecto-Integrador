@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <title>MenúEnsaladas</title>
 </head>
 <body>
@@ -128,8 +129,7 @@
          <li>1/2 Paquete de queso mascarpone o requesón</li>
      </ul>
 
-             <h3>Procedimiento</h3>
-
+             <h3>Procedimiento</h3
     
         <p>
             <b>Para la vinagreta</b> <br>
@@ -142,27 +142,22 @@
         </p>
     </div>
 
-   
-
  </div>
-
-
-<div class=> 
-    <!--Cuarta receta--> 
- <div class="contenedor">
-             
-        <img src="Imágenes/EnsaladadePastaAlPesto.jpg" alt="Ensalada pasta al pesto">
-    
-       <div class="receta">
+>br>
+<div class=container> <!--inicio segundo bloques de recetas--!>
+  <!--Cuarta receta--> 
+       <div class="carta">   
+             <img src="Imágenes/EnsaladadePastaAlPesto.jpg" alt="Ensalada pasta al pesto">
             <H2>Ensalada de Pasta con salsa Pesto</H2>
             <p>Disfruta de una deliciosa y sencilla ensalada de pasta con salsa pesto. Esta receta rápida combina la textura al dente de la pasta con el vibrante 
-               sabor del pesto, creando un plato fresco y sabroso que es perfecto para cualquier ocasión.</p>
+               sabor del pesto.</p>
+            <a href="#ex4" rel="modal:open"><button>¡Preparar!</button></a> 
        </div>
-   </div>
  
-   <div class="ocultar">
-        <div class="Datos">
-             <img src="Imágenes/ingredientes.png" alt="bandeja">
+   <div id="ex4" class="modal receta">
+        
+       <H2>Ensalada de Pasta con salsa Pesto</H2>
+       <div>
              <h3>Ingredientes</h3>
         </div> 
     
@@ -177,14 +172,10 @@
          <li>Aceite de oliva virgen</li>
          <li>2 Tazas de quinoa</li>
          <li>Sal</li>
-     </ul>
-
-        <div class="Datos">
-             <img src="Imágenes/procedimiento.png" alt="sartén">
+     </ul>   
              <h3>Procedimiento</h3>
-        </div> 
-    
-        <p>
+       
+         <p>
             <b>Poner una cazuela al fuego con agua y sal</b> <br>
             <b>1.</b> Cuando hierva, cocer la pasta hasta que esté al dente; escurrir, dejar enfriar y reservar. 
             Lavar y secar los tomatitos y cortarlos en cuartos. Cortar las aceitunas negras en rodajas o en trocitos pequeños; reservar.<br>
@@ -197,32 +188,22 @@
         </p>
     </div>
 
-     <button>
-        <b>¡Preparar!</b>
-     </button>
-
-</div>
-   
-
-
 <!--Quinta receta-->
-<br>
-
-<div>
-    <div class="contenedor">
              
-        <img src="Imágenes/ensalada frijoles y maiz.avif" alt="Ensalada quinoa y espinaca">
-    
-       <div class="receta">
-            <H2>Ensalada de frijoles negros y maíz</H2>
+       <div class="carta">
+            <img src="Imágenes/ensalada frijoles y maiz.avif" alt="Ensalada quinoa y espinaca">
+           <H2>Ensalada de frijoles negros y maíz</H2>
             <p>Disfruta de una deliciosa y sencilla ensalada de frijoles negros y maíz. Esta receta rápida y colorida combina sabores frescos y nutritivos,
             perfecta para una comida ligera y saludable en cualquier momento del día.</p>
+           <a href="#ex5" rel="modal:open"><button>¡Preparar!</button></a>
+           
        </div>
-   </div>
+  
    
-   <div class="ocultar">
-        <div class="Datos">
-             <img src="Imágenes/ingredientes.png" alt="bandeja">
+   <div id="ex5" class="modal receta">
+       
+        <H2>Ensalada de frijoles negros y maíz</H2>
+       <div>      
              <h3>Ingredientes</h3>
         </div> 
     
@@ -243,11 +224,7 @@
          <li> 1/4 taza queso cotija</li>
      </ul>
 
-        <div class="Datos">
-             <img src="Imágenes/procedimiento.png" alt="sartén">
              <h3>Procedimiento</h3>
-        </div> 
-    
         <p> 
             <b>1.</b>En una ensaladera mezcla los frijoles, el maíz, el aguacate, el jalapeño, los tomates, la cebolla y el cilantro.<br>
             <b>2.</b> En un tazón pequeño, mezcla el zumo de limón, el aceite, la miel y el comino. Condimentar con sal y pimienta.<br>
@@ -255,31 +232,22 @@
         </p>
     </div>
 
-     <button>
-        <b>¡Preparar!</b>
-     </button>
-</div>
-
 <!--Sexta receta-->
-<br>
-
-<div>
-    <div class="contenedor">
              
-        <img src="Imágenes/ensalada de pollo y aguacate.jpg" alt="Ensalada de Pollo y aguacate">
-    
-       <div class="receta">
+       <div class="carta">
+            <img src="Imágenes/ensalada de pollo y aguacate.jpg" alt="Ensalada de Pollo y aguacate">
             <H2>Ensalada de Pollo y Aguacate</H2>
             <p>Disfruta de una deliciosa y sencilla ensalada de pollo y aguacate. Esta receta rápida combina
             la jugosidad del pollo con la cremosidad del aguacate, creando un plato nutritivo y sabroso, perfecto para cualquier ocasión.</p>
+            <a href="#ex6" rel="modal:open"><button>¡Preparar!</button></a>
        </div>
-   </div>
    
-   <div class="ocultar">
-        <div class="Datos">
-             <img src="Imágenes/ingredientes.png" alt="bandeja">
-             <h3>Ingredientes</h3>
-        </div> 
+   <div id="ex6" class="modal receta">
+            
+       <H2>Ensalada de Pollo y Aguacate</H2>
+             <div>
+                 <h3>Ingredientes</h3>
+             </div>
     
      <ul>
         <b>Para la ensalada</b> 
@@ -291,7 +259,8 @@
          <li>1/2 taza de maíz fresco o congelado</li>
          <li>1/4 cebolla roja, en rodajas finas</li>
          <br>
-        <b>Para el aderezo</b>
+       
+         <b>Para el aderezo</b>
         
          <li> 1/4 taza zumo de lima</li>
          <li>3 cucharadas de aceite de oliva virgen extra</li>
@@ -303,10 +272,7 @@
        
      </ul>
 
-        <div class="Datos">
-             <img src="Imágenes/procedimiento.png" alt="sartén">
              <h3>Procedimiento</h3>
-        </div> 
     
         <p> 
             <b>1.</b>Cocina el pollo a la plancha hasta que esten dorados.<br>
@@ -318,12 +284,11 @@
         </p>
     </div>
 
-     <button>
-        <b>¡Preparar!</b>
-     </button>
 </div>
 
-
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    
 </body> 
 
 <footer>Come rico, Come saludable </footer>
